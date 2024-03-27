@@ -10,7 +10,7 @@ def greeting_decorator(func):
             name = args[0]
             if not name:
                 raise GreetingError("Name is required.")
-            greetings = ["Salutations", "Greetings", "Howdy", "Ahoy", "Hello", "Hi"]
+            greetings = ["Howdy", "Ahoy", "Hello", "Hi"]
             message = random.choice(greetings)
             return func(name, message)
         except GreetingError as e:
