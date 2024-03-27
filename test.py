@@ -19,7 +19,7 @@ def greeting_decorator(func):
 
 @greeting_decorator
 def generate_greeting(name, message):
-    return f"{message}, {name}!"
+    return f"{message}, {name}! :)"
 
 def main():
     user_name = input("Please enter your name: ")
